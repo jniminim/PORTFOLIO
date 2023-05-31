@@ -1,0 +1,634 @@
+/* reset style start */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --light_font:#ddd;
+    --dark_font:#444;
+    --bg_color:#E8C7B6;
+font-size: 18px;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{color: #600624; font-family:'Roboto' ,'Noto Sans KR', 'sans-serif';}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('※'),
+    url('../fonts/Roboto-Regular.eot'),
+    url('../fonts/Roboto-Regular.eot#iefix') format('embedded-opentype')
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.otf') format('opentype'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+a{text-decoration: none; color: inherit;}
+li{list-style: none;}
+.btn{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    background-color: #600624;
+    text-align: center;
+    line-height: 40px;
+}
+
+.btn:hover{
+    background-color: #222;
+    
+}
+
+h3{
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+p{
+    font-size: 18px;
+    line-height: 28px;
+}
+/* reset style end */
+
+/* header style start */
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+header nav{
+    width: 100%;
+    height: 15vh;
+    background-color: #600624;
+    color: white;
+}
+header nav .top,
+header nav .bot{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+header nav .top{
+    height: 60%;
+   
+    
+}
+
+header nav .bot{
+    height: 40%;
+}
+
+header .top .logo{
+    width: 7%;
+    height: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+header .top .logo img{
+    width: 100%;
+}
+
+header nav .my_page{
+    width: 20%;
+    font-size: 12px;
+    right: 0;
+}
+
+header .menu{
+    
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+header .main_menu{
+    width: 30%;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .banner{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+header .banner .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+header .banner .container .accordion{
+    min-width: 20%;
+    height: 100%;
+    overflow: hidden;
+    flex: 1;
+    transition: 1s;
+    
+}
+
+header .banner .container .accordion_img{
+    max-width: 0;
+    height: 100%;
+    /* background-color: #600624; */
+    /* padding: 0 20px 0 20px; */
+}
+
+
+header .banner .container .accordion_img img{
+    
+    height: 100%;
+}
+
+header .banner .container .accordion:hover{
+    flex-grow: 2;
+    transition: 1s;
+}
+
+
+/* header style end */
+
+/* sec01 style start */
+
+#sec01{
+    width: 100%;
+    height: 80vh;
+    
+}
+
+
+#sec01 .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#sec01 .container .text_box{
+    width: 80%;
+    height: 30%;
+    text-align: center;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+#sec01 .container .text_box h3{
+    font-size: 34px;
+}
+
+#sec01 .container .text_box p{
+    font-size: 18px;
+    margin: 30px 0;
+    line-height: 28px;
+}
+
+#sec01 .container .img_box{
+    width: 40%;
+    height: 50%;
+
+    
+}
+
+#sec01 .container .img_box img{
+    width: 100%;
+}
+
+
+
+
+/* sec01 style end */
+
+/* sec02 style start */
+#sec02{
+    width: 100%;
+    height: 110vh;
+    margin-top: 110px;
+    
+}
+
+#sec02 .container{
+    width: 100%;
+    height: 100%;
+
+}
+
+#sec02 .container .top,
+#sec02 .container .bot{
+    width: 100%;
+    height: 50%;
+    display: flex;
+   
+}
+
+#sec02 .container .top .left{
+    width: 60%;
+    height: 100%;
+}
+
+#sec02 .container .top .left .img_box{
+    width: 100%;
+    height: 100%;
+}
+#sec02 .container .top .left .img_box img{
+    width: 100%;
+}
+
+#sec02 .container .top .right{
+    width: 40%;
+    position: relative;
+    
+}
+
+#sec02 .container .top .right .text_box{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#sec02 .container .top .right .text_box h3{
+    font-size: 34px;
+}
+
+#sec02 .container .top .right .text_box p{
+    font-size: 18px;
+    margin: 30px 0;
+    line-height: 28px;
+}
+
+
+#sec02 .container .bot{
+    position: relative;
+    margin-top: 50px;
+}
+
+
+#sec02 .container .bot .img_box{
+    position: absolute;
+    bottom: 0;
+
+}
+
+#sec02 .container .bot .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#sec02 .container .bot .small{
+    left: 17.5% ;
+    width: 30%;
+    height: 80%;
+}
+
+#sec02 .container .bot .big{
+    width: 50%;
+    height: 100%;
+    right: 20px;
+}
+
+
+/* sec02 style end */
+
+/* sec03 style start */
+
+#sec03{
+    width: 100%;
+    height: 100vh;
+    margin-top: 300px;
+}
+
+#sec03 .container{
+    width: 90%;
+    height: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+
+
+#sec03 .container .text_box,
+#sec03 .container .puzzle_img{
+    position: absolute;
+}
+
+#sec03 .container .text_box{
+    left: 52%;
+    width: 40%;
+}
+
+#sec03 .container .text_box h3{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#sec03 .container .text_box p{
+    line-height: 28px;
+    font-size: 18px;
+}
+
+#sec03 .container .puzzle_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec03 .container .left_img{
+    right: 51.5%;
+    top: 2.7%;
+    width: 448px;
+    height: 470px;
+}
+
+#sec03 .container .right_img{
+    right: 26%;
+    top: 16%;
+    width: 423px;
+    height: 340px;
+}
+
+#sec03 .container .bot_img{
+    width: 835px;
+    height: 410px;
+    left: 23.5%;
+    bottom: 4.5%;
+}
+
+/* sec03 style end */
+
+/* sec04 style start */
+
+#sec04{
+    width: 100%;
+    height: 50vh;
+    margin-top: 150px;
+}
+
+#sec04 .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec04 .container .left{
+    width: 40%;
+    height: 100%;
+}
+#sec04 .container .left .text_box{
+    padding: 80px;
+}
+
+
+#sec04 .container .right{
+    width: 50%;
+}
+#sec04 .container .right .img_box{
+    width: 100%;
+    height: 100%;
+}
+#sec04 .container .right .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sec04 style end */
+
+
+
+/* sec05 style start */
+
+#sec05{
+    width: 100%;
+    height: 100vh;
+}
+
+
+#sec05 h3{
+    display: none;
+}
+#sec05 .container{
+    width: 85%;
+    height: 100%;
+    margin: 200px auto 0;
+    position: relative;
+}
+
+#sec05 .container .img_box{
+    position: absolute;
+    width: 35%;
+    height: 70%;
+}
+
+#sec05 .container .left_img{
+    
+    left: 20%;
+}
+
+#sec05 .container .right_img{
+    top: 20%;
+    left: 52%;
+}
+
+#sec05 .container .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec05 .container .text_box{
+    font-size: 60px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 111;
+}
+
+#sec05 .container .top_text{
+    top: 5%;
+    left: 53%;
+    
+}
+
+#sec05 .container .bot_text{
+    bottom: 18%;
+    left: 18%;
+}
+/* sec05 style end */
+
+
+
+/* sec06 style start */
+#sec06{
+    width: 100%;
+    height: 100vh;
+}
+
+#sec06 .container{
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+}
+
+#sec06 .container h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#sec06 .container .slide_container{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    /* animation: move 20s linear  infinite; */
+}
+
+#sec06 .container .slide_container .slide_item{
+    position: absolute;
+    width: 800px;
+    height: 48.25%;
+    /* overflow: hidden; */
+    
+}
+
+#sec06 .container .slide_container .slide_item .img_box{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    overflow: hidden;
+    
+}
+
+#sec06 .container .slide_container .slide_item .img_box:nth-child(2){
+    margin-top: 30px;
+}
+
+#sec06 .container .slide_container .long_img{
+    width: 485px;
+    height: 100%;
+    left: 0;
+    background-color: #600624;
+   overflow: hidden;
+}
+
+#sec06 .container .slide_container .slide_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.7s;
+   
+}
+
+#sec06 .container .slide_container .long_img:hover img,
+#sec06 .container .slide_container .img_box:hover img
+{
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+#sec06 .container .slide_container.transition{
+    transition: 0.01s;
+}
+
+/* sec06 style end */
+.top_btn{
+    height: 100px;
+    line-height: 100px;
+    margin: 0 1750px 20px;
+    position: relative;
+    z-index: 123;
+
+}
+
+/* footer style start */
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #600624;
+    color:#eee ;
+    font-size: 14px;
+    margin-top: 200px;
+}
+footer .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .container .left{
+    width: 15%;
+    height: 100%;
+    position: relative;
+}
+
+footer .container .left .logo{
+    width: 50%;
+    height: 28%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .container .left .logo img{
+    width: 100%;
+    
+}
+
+footer .container .center {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .container .center .text{
+    line-height: 28px;
+}
+
+
+footer .container .right{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .container .right .sns_item{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer .container .right .sns_item .sns_img{
+    width: 22%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+
+}
